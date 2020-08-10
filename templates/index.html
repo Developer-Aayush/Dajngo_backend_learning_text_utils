@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Text Utils</title>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<body>
+    <h1 class="display-4" style="text-align: center;">
+        Welcome to the text analyzer. <br><br>Enter your text below
+    </h1>
+    <form action="/analyze" method="get">
+        <textarea class="form-control" name='text' style=" margin: 0px; height: 203px; width: 1800px; margin-left:60px;"></textarea><br>
+        <input type="checkbox" name="removepunc" style="margin-left: 60px; margin-top:20px;"> Remove Punctuations <br>
+        <input type="checkbox" name="fullcaps" style="margin-left: 60px; margin-top:20px;"> UPPERCASE <br>
+        <input type="checkbox" name="newlineremover " style="margin-left: 60px; margin-top:20px;"> New Line Remover <br>
+        <input type="checkbox" name="extraspaceremover" style="margin-left: 60px; margin-top:20px;"> Remove the extra space<br>
+        <button class="btn btn-success " type="submit " style="margin-top: 30px; margin-left:60px; ">Analyze Text</button>
+    </form>
+</body>
+
+</html>
